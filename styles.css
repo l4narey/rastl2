@@ -1,35 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
-    background-color: #540d19; /* Vermelho vinho */
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    background-color: #000000; /* Preto para fundo hacker */
+    color: #00ff00; /* Verde neon */
+    font-family: 'VT323', monospace; /* Fonte de terminal */
     text-align: center;
     padding: 20px;
+    font-size: 1.5rem;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #00ff00; /* Efeito neon */
 }
 
 button {
-    background-color: #8c1c26; /* Tom mais claro para contraste */
-    color: white;
-    border: none;
+    background-color: #000000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
     padding: 10px 20px;
     font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 8px;
     cursor: pointer;
+    border-radius: 5px;
     transition: 0.3s;
+    box-shadow: 0 0 10px #00ff00;
 }
 
 button:hover {
-    background-color: #a8323a;
+    background-color: #00ff00;
+    color: #000000;
+    box-shadow: 0 0 15px #00ff00;
 }
 
 p {
     font-size: 1.2rem;
     margin-top: 20px;
+    text-shadow: 0 0 10px #00ff00;
 }
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; } /* Some no meio do ciclo */
+    100% { opacity: 1; }
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #00ff00;
+    animation: blink 4s infinite alternate; /* Aplica o efeito piscando */
+}
+
