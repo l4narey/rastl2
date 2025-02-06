@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rastreador</title>
+    <title>Rastreador de Localização</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1> RASTREADOR </h1>
-    
-    <button onclick="getLocation()">Obter Localização</button>
-    <p id="status"></p>
+    <header>
+        <h1>Rastreador de Localização</h1>
+    </header>
+
+    <div class="container">
+        <p>Localização do dispositivo:</p>
+        <p id="localizacao">Aguardando a localização...</p>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
