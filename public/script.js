@@ -13,7 +13,7 @@ function showPosition(position) {
 
     console.log("Latitude: " + latitude + ", Longitude: " + longitude);
 
-    // Substitua pela sua chave da API
+    
     var apiKey = "AIzaSyDuQtrZDbCsLW8AeEYo6ZqXnzeqi2Mq6EA";
     
     var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
@@ -36,7 +36,6 @@ function showPosition(position) {
         });
 }
 
-// Função para lidar com erros da geolocalização
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
